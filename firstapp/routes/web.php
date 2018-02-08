@@ -17,3 +17,6 @@ Route::get('/', 'pagesController@getHome');
 Route::get('/about', 'pagesController@getAbout');
 
 Route::post('/about/submit', 'MessagesController@submit');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
